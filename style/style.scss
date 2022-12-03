@@ -10,6 +10,60 @@
 .container {
   width: 1200px;
   margin: 0 auto;
+  /*кнопка звонка*/
+
+.callback-bt {
+  background: #38a3fd;
+  border-radius: 50%;
+  box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3);
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: block;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  position: fixed;
+  right: 60px;
+  bottom: 40px;
+  z-index: 999;
+  transition: 0.3s ease-in-out;
+  -webkit-animation: hoverWave linear 1s infinite;
+  animation: hoverWave linear 1s infinite;
+}
+
+.text-call {
+  background-image: url("../img/icons/free-icon-phone-2948005.png");
+  background-repeat: no-repeat;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 9px;
+  left: 9px;
+}
+
+@keyframes hoverWave {
+  0% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3),
+      0 0 0 0 rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2);
+  }
+
+  40% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3),
+      0 0 0 15px rgba(56, 163, 253, 0.2), 0 0 0 0 rgba(56, 163, 253, 0.2);
+  }
+
+  80% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3),
+      0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 26.7px rgba(56, 163, 253, 0.067);
+  }
+
+  100% {
+    box-shadow: 0 8px 10px rgba(56, 163, 253, 0.3),
+      0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0);
+  }
+}
+
+/* конец кнопки звонка */
 }
 header {
   z-index: 6;
@@ -262,9 +316,9 @@ header {
   ul {
     margin: 0 auto;
     width: 1000px;
-    li { 
+    li {
       display: block;
-     margin-right: 20px;
+      margin-right: 20px;
       list-style-type: none;
       color: white;
       margin-bottom: 20px;
@@ -276,6 +330,28 @@ header {
     }
   }
 }
-.about{
-  background: ;
+.about {
+  background: #193844;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h4 {
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+  }
+  p {
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+  }
 }
+
