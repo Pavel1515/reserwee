@@ -72,7 +72,6 @@ header {
   left: 0;
   width: 100%;
   background: #1fbd8a;
-  // box-shadow: rgba(19, 40, 29, 0.098);
   height: 71px;
   .line {
     margin-top: 5px;
@@ -102,7 +101,7 @@ header {
       a {
         text-decoration: none;
         color: white;
-        font-style: 16px;
+        font-size: 16px;
         margin-left: 6px;
       }
       img {
@@ -356,12 +355,171 @@ header {
       line-height: 22px;
       color: #ffffff;
     }
-    span{
+    span {
       font-family: "Roboto";
       font-weight: 400;
       font-size: 20px;
       line-height: 22px;
       color: #ffffff;
+    }
+  }
+}
+// Медиа запросы
+@media (max-width: 540px) {
+  .container {
+    width: 320px;
+    .callback-bt {
+      right: 35px;
+    }
+  }
+  .main {
+    flex-direction: column;
+    .main_text {
+      width: 100%;
+      margin: 0 auto;
+      h1{
+        margin-top: 20px;
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+    .main_image {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        margin-top: 19px;
+        width: 300px;
+        height: 180px;
+      }
+    }
+  }
+  .scheme {
+    .item_left {
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      .left {
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      .image_left {
+        width: 100%;
+        margin: 0;
+        img {
+          margin: 0 auto;
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+    .item_right {
+      flex-direction: column;
+      margin-bottom: 15px;
+      .right {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .image_right {
+        width: 100%;
+        margin: 0;
+        img {
+          margin: 0 auto;
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+  }
+  .benefits {
+    ul {
+      width: 320px;
+    }
+  }
+  header {
+    height: 85px;
+    .logo {
+      span {
+        font-size: 22px !important;
+      }
+      font-size: 19px;
+    }
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    .callback-bt {
+      right: 35px;
+    }
+  }
+  .main {
+    flex-direction: column;
+    .main_text {
+      width: 100%;
+      margin: 0 auto;
+      h1{
+        margin-top: 20px;
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+    .main_image {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        margin-top: 19px;
+        width: 300px;
+        height: 180px;
+      }
+    }
+  }
+  .scheme {
+    .item_left {
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      .left {
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      .image_left {
+        width: 100%;
+        margin: 0;
+        img {
+          margin: 0 auto;
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+    .item_right {
+      flex-direction: column;
+      margin-bottom: 15px;
+      .right {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .image_right {
+        width: 100%;
+        margin: 0;
+        img {
+          margin: 0 auto;
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+  }
+  .benefits {
+    ul {
+      width: 320px;
+    }
+  }
+  header {
+    height: 85px;
+    .logo {
+      span {
+        font-size: 22px !important;
+      }
+      font-size: 19px;
     }
   }
 }
