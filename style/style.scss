@@ -63,9 +63,9 @@
         0 0 0 30px rgba(56, 163, 253, 0), 0 0 0 40px rgba(56, 163, 253, 0);
     }
   }
-
-  /* конец кнопки звонка */
 }
+/* конец кнопки звонка */
+
 header {
   z-index: 6;
   position: fixed;
@@ -83,6 +83,7 @@ header {
   }
   .header_wraper {
     padding-top: 12px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -365,6 +366,109 @@ header {
     }
   }
 }
+@media (max-width:1200px) {
+  .container{
+    width: 980px;
+  }
+}
+@media (max-width: 980px) {
+  .container {
+    width: 760px;
+  }
+  .item_left {
+    .image_left {
+      img {
+        width: 300px;
+      }
+    }
+  }
+  .item_right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px !important;
+    .image_right {
+      img{
+        width: 300px!important;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  .container {
+    width: 540px;
+    .callback-bt {
+      right: 35px;
+    }
+  }
+  .main {
+    flex-direction: column;
+    .main_text {
+      width: 100%;
+      margin: 0 auto;
+      h1 {
+        margin-top: 20px;
+        font-size: 42px;
+        line-height: 56px;
+      }
+    }
+    .main_image {
+      width: 100%;
+      margin: 0 auto;
+      img {
+        margin: 0;
+        margin-top: 19px;
+        width: 300px;
+        height: 180px;
+      }
+    }
+  }
+  .scheme {
+    .item_left {
+      flex-direction: column-reverse;
+      margin-bottom: 15px;
+      .left {
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      .image_left {
+        width: 100%;
+        img {
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+    .item_right {
+      flex-direction: column;
+      margin-bottom: 15px;
+      .right {
+        width: 100% !important;
+        margin: 0 auto;
+      }
+      .image_right {
+        width: 100%;
+        img {
+          width: 300px;
+          height: 360px;
+        }
+      }
+    }
+  }
+  .benefits {
+    ul {
+      width: 320px;
+    }
+  }
+  header {
+    .logo {
+      span {
+        font-size: 22px !important;
+      }
+      font-size: 19px;
+    }
+  }
+}
 // Медиа запросы
 @media (max-width: 540px) {
   .container {
@@ -378,7 +482,7 @@ header {
     .main_text {
       width: 100%;
       margin: 0 auto;
-      h1{
+      h1 {
         margin-top: 20px;
         font-size: 42px;
         line-height: 56px;
@@ -457,7 +561,7 @@ header {
     .main_text {
       width: 100%;
       margin: 0 auto;
-      h1{
+      h1 {
         margin-top: 20px;
         font-size: 42px;
         line-height: 56px;
